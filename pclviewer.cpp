@@ -1,6 +1,6 @@
 #include "pclviewer.h"
 #include <stdlib.h>
-//#include <vtkRenderWindow.h>
+#include <vtkRenderWindow.h>
 
 
 PCLViewer::PCLViewer(QWidget *parent)

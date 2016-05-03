@@ -88,3 +88,19 @@ else:win32-g++:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/../../pkg/p
 else:win32:!win32-g++:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/../../pkg/pcl-superbuild/build/CMakeExternals/Build/vtk-android/CMakeExternals/Install/vtk-android/lib/release/vtkGUISupportQt-7.1.lib
 else:win32:!win32-g++:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/../../pkg/pcl-superbuild/build/CMakeExternals/Build/vtk-android/CMakeExternals/Install/vtk-android/lib/debug/vtkGUISupportQt-7.1.lib
 else:unix: PRE_TARGETDEPS += $$PWD/../../pkg/pcl-superbuild/build/CMakeExternals/Build/vtk-android/CMakeExternals/Install/vtk-android/lib/libvtkGUISupportQt-7.1.a
+
+
+
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../../pkg/pcl-superbuild/build/CMakeExternals/Build/vtk-android/CMakeExternals/Install/vtk-android/lib/release/ -lvtkGUISupportQt-7.1
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../../pkg/pcl-superbuild/build/CMakeExternals/Build/vtk-android/CMakeExternals/Install/vtk-android/lib/debug/ -lvtkGUISupportQt-7.1
+else:unix: LIBS += -L$$PWD/../../pkg/pcl-superbuild/build/CMakeExternals/Build/vtk-android/CMakeExternals/Install/vtk-android/lib/ -lvtkGUISupportQt-7.1
+
+INCLUDEPATH += $$PWD/../../pkg/pcl-superbuild/build/CMakeExternals/Build/vtk-android/CMakeExternals/Install/vtk-android/include/vtk-7.1
+DEPENDPATH += $$PWD/../../pkg/pcl-superbuild/build/CMakeExternals/Build/vtk-android/CMakeExternals/Install/vtk-android/include/vtk-7.1
+
+win32-g++:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/../../pkg/pcl-superbuild/build/CMakeExternals/Build/vtk-android/CMakeExternals/Install/vtk-android/lib/release/libvtkGUISupportQt-7.1.a
+else:win32-g++:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/../../pkg/pcl-superbuild/build/CMakeExternals/Build/vtk-android/CMakeExternals/Install/vtk-android/lib/debug/libvtkGUISupportQt-7.1.a
+else:win32:!win32-g++:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/../../pkg/pcl-superbuild/build/CMakeExternals/Build/vtk-android/CMakeExternals/Install/vtk-android/lib/release/vtkGUISupportQt-7.1.lib
+else:win32:!win32-g++:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/../../pkg/pcl-superbuild/build/CMakeExternals/Build/vtk-android/CMakeExternals/Install/vtk-android/lib/debug/vtkGUISupportQt-7.1.lib
+else:unix: PRE_TARGETDEPS += $$PWD/../../pkg/pcl-superbuild/build/CMakeExternals/Build/vtk-android/CMakeExternals/Install/vtk-android/lib/libvtkGUISupportQt-7.1.a
+

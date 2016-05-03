@@ -1,8 +1,8 @@
 #ifndef PCLVIEWER_H
 #define PCLVIEWER_H
-//#include <QVTKWidget.h>
-#include <pcl/point_cloud.h>
-#include <pcl/point_types.h>
+#include <QVTKWidget.h>
+//#include <pcl/point_cloud.h>
+//#include <pcl/point_types.h>
 
 #include <pcl/visualization/pcl_visualizer.h>
 
