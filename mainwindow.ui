@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>817</height>
+    <width>1600</width>
+    <height>2560</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -84,6 +84,43 @@
     </property>
     <property name="text">
      <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addPCL">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>250</y>
+      <width>271</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add PCLViewer</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>390</y>
+      <width>1181</width>
+      <height>1121</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout"/>
+   </widget>
+   <widget class="QPushButton" name="setRender">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>120</y>
+      <width>271</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>set render</string>
     </property>
    </widget>
   </widget>
